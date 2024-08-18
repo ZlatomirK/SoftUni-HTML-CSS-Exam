@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font: 16px/1.5 Lato, sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 14px/1.5 "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+
+/* General */
+
+/* Header */
+
+.site-header .wrapper .logo {
+  display: block;
+  width: 10em;
+  height: 3em;
+  background: url("./images/logo.jpeg") center no-repeat;
+  background-size: contain;
+  text-indent: -100vw;
+  overflow: hidden;
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #000;
+  color: #fff;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section Subscriptons */
+
+.section-subscriptions .wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  background: linear-gradient(to bottom, #1db954 50%, #fff 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-subscriptions .wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: url("./images/music.png") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.section-subscriptions .wrapper .plans-title {
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-subscriptions .wrapper .plans-articles {
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.section-subscriptions .wrapper .plans-articles article {
+  max-width: 520px;
+  background: #fff;
+  color: #54546d;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 1em;
+  z-index: 2;
+}
+
+.section-subscriptions .wrapper .plans-articles article ul {
+  list-style-type: circle;
+  padding: 2em 4em;
+}
+
+.section-subscriptions .wrapper .plans-articles article h4 {
+  text-align: center;
+  padding: 0.5em;
+  font-size: larger;
+}
+
+.section-subscriptions .wrapper .plans-articles article .article-title {
+  font-weight: bold;
+}
+
+.section-subscriptions .wrapper .plans-articles article .price-container {
+  background: #191414;
+  color: #fff;
+  display: flex;
+}
+
+.section-subscriptions .wrapper .button {
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background: #1db954;
+  color: #fff;
+  border-radius: 1em;
+}
+
+/* Section DogPal */
+
+.section-dogoPal .wrapper {
+  display: flex;
+  padding: 6em;
+}
+
+.section-dogoPal .wrapper .text {
+  padding-top: 1em;
+}
+
+.section-dogoPal .wrapper .text > * {
+  padding-bottom: 1em;
+}
+
+.section-dogoPal .wrapper .text h4 {
+  font-weight: bold;
+}
+
+/* Section Difference */
+
+.section-difference .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-bottom: 4em;
+}
+
+.section-difference .wrapper h1 {
+  font-weight: bold;
+}
+
+.section-difference .wrapper .align-center {
+  text-align: center;
+}
+
+.section-difference .wrapper .table-benefits {
+  min-width: 1250px;
+  max-height: 300px;
+  text-align: initial;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.section-difference .wrapper .table-benefits p:nth-child(odd) {
+  background: #cccbcb;
+  padding: 0.5em;
+}
+
+.section-difference .wrapper .table-benefits p:nth-child(even) {
+  background: #81d8a0;
+  padding: 0.5em;
+}
+
+/* Footer */
+
+.site-footer {
+  background: #191414;
+  text-align: center;
+  padding: 2em;
+  color: #fff;
+}
